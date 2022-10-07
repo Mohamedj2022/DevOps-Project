@@ -4,5 +4,5 @@ RUN yes | apt-get install python3-pip
 RUN pip install flask
 WORKDIR /app
 COPY . .
-EXPOSE 5001
+EXPOSE 5000
 ENTRYPOINT ["python3", "app.py"]
