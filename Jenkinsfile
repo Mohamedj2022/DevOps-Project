@@ -9,20 +9,22 @@ pipeline
             		steps 
 			{
 				echo 'This is Build part'
-			
-				sh 'python3 app.py'
+				sh 'chmod 777 build.sh'
 				
-            		}
-            	
+				sh './build.sh'
+				
+			}				
         	}
-        stage('Test Stage')
+        stage('Deploy Stage')
 		{
 			agent any
 			steps
 			{
-				echo 'This is Test part'
+				echo 'This is Deploy part'
+				sh 'chmod 777 run.sh'
+				sh './run.sh'
 			
-				sh 'python3 test.py'
+		
 			}
 		}
 	stage('Admin Approval') 
@@ -41,7 +43,7 @@ post
 		}
 	failure 
 		{
-			echo 'Sorry mate! build is Failed :('
+			echo 'Sorry. Build failed :('
 		}
 	unstable 
 		{
