@@ -1,6 +1,4 @@
-<head>
-	<title>European League Teams Web App</title>
-</head>
+
 <body>
 	<h1>European League Teams Web App</h1>
 	<p>This is a simple web application that allows users to view, add, edit and delete teams in the European League. The web app is built using Python with Flask framework, SQLite database and HTML for the frontend.</p>
