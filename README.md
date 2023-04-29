@@ -7,7 +7,7 @@
 <ul>
 	<li>Python with Flask and SQLite</li>
 	<li>HTML for the frontend</li>
-	<li>Azure Windows VM for hosting</li>
+	<li>Azure VM for hosting</li>
 	<li>Jira for project management</li>
 	<li>Github for source code management</li>
 	<li>Docker for containerization</li>
